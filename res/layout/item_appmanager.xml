@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <!-- 图标 -->
+    <ImageView
+        android:id="@+id/item_appmanager_im"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout 
+        android:layout_toRightOf="@+id/item_appmanager_im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        >
+        <!-- 应用名 -->
+        <TextView
+            android:id="@+id/item_app_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="name"
+            />
+        <!-- 大小 -->
+        <TextView
+            android:id="@+id/item_app_appsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="size"
+            />
+        <!-- 版本 -->
+        <TextView
+            android:id="@+id/item_app_appbanben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="banben"
+            />
+    </LinearLayout>
+    
+    <!-- 打开按钮 -->
+    <Button 
+        android:id="@+id/item_app_dakai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开"
+        android:layout_toLeftOf="@+id/item_app_xiezai"
+        android:background="@drawable/app_button_bg"
+        android:gravity="center_horizontal"
+        />
+    <!-- 卸载按钮 -->
+     <Button 
+        android:id="@+id/item_app_xiezai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卸载"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/app_button_bg"
+        android:gravity="center_horizontal"
+        />
+    
+</RelativeLayout>

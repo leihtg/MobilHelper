@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_1" >
+    
+    <LinearLayout 
+        android:id="@+id/power_l1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/include_top"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+         android:id="@+id/power_l2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/power_l1"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/activity_power_im_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/battery_empty" 
+           />
+    <ImageView
+            android:id="@+id/activity_power_im_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/battery_full" 
+            android:scaleType="matrix"
+            android:layout_alignLeft="@+id/activity_power_im_1"
+            />
+
+    <ImageView
+        android:id="@+id/activity_power_im_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_power_im_1"
+        android:layout_alignTop="@+id/activity_power_im_1"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/bty_charging"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/activity_power_dianliang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:text="电量"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignRight="@+id/activity_power_im_1" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/power_l2"
+        >
+        <TextView 
+            android:id="@+id/power_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="電池狀態"
+            android:textSize="19sp"
+            android:layout_marginTop="22dp"
+            android:textColor="#ffffff"
+            />
+        <TextView 
+            android:id="@+id/power_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运行状况"
+            android:textSize="19sp"
+            android:layout_marginTop="22dp"
+            android:textColor="#ffffff"
+            />
+        <TextView 
+            android:id="@+id/power_tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电压"
+            android:textSize="19sp"
+            android:layout_marginTop="22dp"
+            android:textColor="#ffffff"
+            />
+        
+        <TextView 
+            android:id="@+id/power_tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度"
+            android:textSize="19sp"
+            android:layout_marginTop="22dp"
+            android:textColor="#ffffff"
+            />
+        
+        <TextView 
+            android:id="@+id/power_tv_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="技术:Li-ion"
+            android:textSize="19sp"
+            android:layout_marginTop="22dp"
+            android:textColor="#ffffff"
+            />
+        <TextView 
+            android:id="@+id/power_tv_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="19sp"
+            android:layout_marginTop="22dp"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:id="@+id/app_rg"
+    >
+    <RadioButton 
+        android:id="@+id/app_rb_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/app_button_bg"
+        android:text="全部应用"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:checked="true"
+        />
+     <RadioButton 
+        android:id="@+id/app_rb_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/app_button_bg"
+        android:text="非系统应用"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        />
+      <RadioButton 
+        android:id="@+id/app_rb_sys"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/app_button_bg"
+        android:text="系统应用"
+         android:gravity="center"
+        android:textColor="#ffffff"
+        />
+
+</RadioGroup>

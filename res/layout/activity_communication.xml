@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:id="@+id/com_beifen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_button_bg"
+        android:text="备份短信"
+        android:onClick="btnLis"
+        />
+    <Button 
+        android:id="@+id/com_huanyuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_button_bg"
+        android:text="还原短信"
+        android:onClick="btnLis"
+        />
+
+</LinearLayout>
